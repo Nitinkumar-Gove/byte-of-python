@@ -1,0 +1,3 @@
+2016-10-24 12:03:33,253 : DEBUG : Start of the program
+2016-10-24 12:03:36,191 : INFO : Checking user input
+2016-10-24 12:03:36,193 : ERROR : Name too short
