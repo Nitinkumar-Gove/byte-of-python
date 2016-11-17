@@ -12,7 +12,7 @@ This is repository where all the basic python programs are stored.
 8. Extras
 9. Decorators
 
-# Reference Book
+# References
 [Website](https://python.swaroopch.com/)
 
 [Socket Programming - Introduction](http://www.binarytides.com/python-socket-programming-tutorial/)
