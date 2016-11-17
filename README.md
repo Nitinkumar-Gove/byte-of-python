@@ -14,7 +14,9 @@ This is repository where all the basic python programs are stored.
 
 # Reference Book
 [Website](https://python.swaroopch.com/)
+
 [Socket Programming - Introduction](http://www.binarytides.com/python-socket-programming-tutorial/)
+
 [Simple Socket Server](http://www.binarytides.com/python-socket-server-code-example/)
 
 
