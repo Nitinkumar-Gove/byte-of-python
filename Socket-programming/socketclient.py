@@ -1,8 +1,8 @@
 '''
 
-This is a simple program which demonstrates socket programming in python.
+This is a simple program which demonstrates socket client programming in python.
 @author Nitinkumar Gove
-@version 1.1
+@version 1.2
 
 '''
 
@@ -16,18 +16,18 @@ except socket.error,msg:
     print " failed to create socket - ",msg[1]
     sys.exit()
 
-print "socket created"  #stage 1 end
+print "client socket created"  #stage 1 end
 
 # fetch IP address for a host 
-host = "www.google.com"
-port = 80
+host = "127.0.0.1"
+port = 6000
 try:
     fbip = socket.gethostbyname(host)
 except socket.gaierror,msg:
     print "failed to find host ip - ", msg[1]
     sys.exit()
 
-print "fb ip address  - ",fbip #stage 2 end
+print "server ip address  - ",fbip #stage 2 end
 
 # connect to host on port
 try:
@@ -36,10 +36,10 @@ except socket.error, msg:
     print "failed to connect - ",msg[1]
     sys.exit()
 
-print "socket connected" #stage 3 end
+print "client socket connected" #stage 3 end
 
 # send data to server
-payload = "GET / HTTP/1.1\r\n\r\n"
+payload = "first request"
 try:
     s.sendall(payload)
 except socket.error, msg:
@@ -55,9 +55,9 @@ except socket.error, msg:
     print "failed to receive data - ",msg[1]
     sys.exit()
 
-print "data -",data #stage 5 end
+print "client received -",data #stage 5 end
 
 # close the socket 
 s.close()
-print "socket disconnected"
+print "client socket disconnected"
     
